@@ -1,4 +1,5 @@
-function createOne(){
+export default function createOne(){
+    const content = document.querySelector(".content")
     const text1 = document.createElement("p")
     text1.className = "text"
     text1.textContent = "Try our napolean pizza"
@@ -7,4 +8,5 @@ function createOne(){
     image1.className = "image"
     image1.src = "pizza1.jpg"
     content.appendChild(image1)
+    alert
 }
