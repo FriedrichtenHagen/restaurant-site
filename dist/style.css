@@ -10,11 +10,12 @@ body{
 }
 .header{
     background-color: aquamarine;
-    min-height: 50px;
+    min-height: 13vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100vw;
+    box-shadow: 1px 1px #7B7A72;
 }
 .titel{
     margin-left: 5px;
@@ -33,14 +34,31 @@ body{
     width: 20px;
 }
 .menu{
-    position: absolute;
+    position: fixed;
+    top: 13vw;
+    right: 0px;
+
     z-index: 1;
     width: 100px;
-    height: 300px;
+    height: 150px;
     display: none;
+    opacity: 1;
+    background-color: rgb(233, 247, 240);
+    border-radius: 0 0 0 10px;
+    box-shadow: 1px 1px #7B7A72;
+}
+.menu ul{
+    list-style: none;
+    padding: 5px;
+}
+.menu li{
+    cursor: pointer;
 }
 .active{
     display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .content{
     display: flex;
