@@ -4,7 +4,10 @@
   "description": "A single page restaurant site with dynamically rendered content.",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"  
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/FriedrichtenHagen/restaurant-site/issues"
   },
-  "homepage": "https://github.com/FriedrichtenHagen/restaurant-site#readme"
+  "homepage": "https://github.com/FriedrichtenHagen/restaurant-site#readme",
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
+  }
 }
